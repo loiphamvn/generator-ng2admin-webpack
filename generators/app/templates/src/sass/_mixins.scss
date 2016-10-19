@@ -1,0 +1,99 @@
+/**
+ * These are the custom mixins used throughout the application.
+ */
+
+@mixin placeholder($color: $color-gray, $font-size: $font-size-default) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    font-size: $font-size;
+  }
+  &::-moz-placeholder {
+    color: $color;
+    font-size: $font-size;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    font-size: $font-size;
+  }
+  &:-moz-placeholder {
+    color: $color;
+    font-size: $font-size;
+  }
+}
+
+@mixin border-radius($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border($border-top: $std-border, $border-right: $std-border, $border-bottom: $std-border, $border-left: $std-border) {
+  border-top: $border-top;
+  border-right: $border-right;
+  border-bottom: $border-bottom;
+  border-left: $border-left;
+}
+
+@mixin border($border: $std-border) {
+  border: $border;
+}
+
+@mixin user-select($select: none) {
+  -webkit-user-select: $select; /* Chrome/Safari */
+  -moz-user-select: $select; /* Firefox */
+  -ms-user-select: $select; /* IE10+ */
+  -o-user-select: $select;
+  user-select: $select;
+}
+
+@mixin box-center() {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin transform($transform) {
+  -ms-transform: $transform; /* IE 9 */
+  -webkit-transform: $transform; /* Safari */
+  transform: $transform;
+}
+
+@mixin calc-width($percent: 100%, $operation: '-', $value: 0px) {
+  width: calc(#{$percent $operation $value});
+}
+
+@mixin calc-width-expression($expression) {
+  width: -webkit-calc(#{$expression}); /** Safari 6, Chrome 19-25 **/
+  width: -moz-calc(#{$expression}); /** FF 4-15  **/
+  width: calc(#{$expression}); /** FF 16+, IE 9+, Opera 15, Chrome 26+, Safari 7 and future other browsers **/
+}
+
+@mixin calc-height-expression($expression) {
+  height: -webkit-calc(#{$expression}); /** Safari 6, Chrome 19-25 **/
+  height: -moz-calc(#{$expression}); /** FF 4-15  **/
+  height: calc(#{$expression}); /** FF 16+, IE 9+, Opera 15, Chrome 26+, Safari 7 and future other browsers **/
+}
+
+@mixin background-size($size) {
+  -webkit-background-size: $size;
+  -moz-background-size: $size;
+  -o-background-size: $size;
+  background-size: $size;
+}
+
+// Animations
+@mixin animation($animation) {
+  -webkit-animation: $animation;
+  -o-animation: $animation;
+  animation: $animation;
+}
+
+// Box sizing
+@mixin box-sizing($boxmodel) {
+  -webkit-box-sizing: $boxmodel;
+  -moz-box-sizing: $boxmodel;
+  box-sizing: $boxmodel;
+}

@@ -1,0 +1,113 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "generator-ng2-webpack",
+        "scope": null,
+        "escapedName": "generator-ng2-webpack",
+        "name": "generator-ng2-webpack",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      ""
+    ]
+  ],
+  "_from": "generator-ng2-webpack@latest",
+  "_id": "generator-ng2-webpack@0.0.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/generator-ng2-webpack",
+  "_nodeVersion": "6.5.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/generator-ng2-webpack-0.0.1.tgz_1464572758059_0.5057129615452141"
+  },
+  "_npmUser": {
+    "name": "bravealdus",
+    "email": "brave.aldus@gmail.com"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "generator-ng2-webpack",
+    "scope": null,
+    "escapedName": "generator-ng2-webpack",
+    "name": "generator-ng2-webpack",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/generator-ng2-webpack/-/generator-ng2-webpack-0.0.1.tgz",
+  "_shasum": "3b3b110c64b4f3feda1c26739da5f21aea2382ed",
+  "_shrinkwrap": null,
+  "_spec": "generator-ng2-webpack",
+  "_where": "",
+  "author": {
+    "name": "Ivan Roth",
+    "email": "loiphamvn@yahoo.com"
+  },
+  "bugs": {
+    "url": "https://github.com/bravealdus/generator-ng2-webpack/issues"
+  },
+  "dependencies": {
+    "yeoman-generator": "^0.23.0"
+  },
+  "description": "Front-end projects with typescript, angular2 and webpack",
+  "devDependencies": {
+    "eslint": "^2.1.0",
+    "eslint-config-xo-space": "^0.13.0",
+    "gulp": "^3.9.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-exclude-gitignore": "^1.0.0",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-mocha": "^2.0.0",
+    "gulp-nsp": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "yeoman-assert": "^2.0.0",
+    "yeoman-test": "^1.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "3b3b110c64b4f3feda1c26739da5f21aea2382ed",
+    "tarball": "https://registry.npmjs.org/generator-ng2-webpack/-/generator-ng2-webpack-0.0.1.tgz"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "mocha": true
+    }
+  },
+  "files": [
+    "generators"
+  ],
+  "gitHead": "0777e2c09496c0fd1117f09e0fa3705a66035e3f",
+  "homepage": "https://github.com/loiphamvn/generator-ng2-webpack#readme",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "license": "MIT",
+  "main": "generators/index.js",
+  "maintainers": [
+    {
+      "name": "bravealdus",
+      "email": "brave.aldus@gmail.com"
+    }
+  ],
+  "name": "generator-ng2-webpack",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loiphamvn/generator-ng2-webpack.git"
+  },
+  "scripts": {
+    "prepublish": "gulp prepublish",
+    "test": "gulp"
+  },
+  "version": "0.0.1"
+}

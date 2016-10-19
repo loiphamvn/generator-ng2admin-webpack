@@ -1,0 +1,63 @@
+<div class="widgets">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="animated fadeIn card  with-scroll table-panel">
+        <div class="card-header clearfix">
+          <h3 class="card-title">Manager Users</h3>
+        </div>
+        <div class="card-body">
+          <div class="button-wrapper">
+            <button class="btn btn-default" type="button" (click)="addItem()">Add User</button>
+          </div>
+          <div class="horizontal-scroll">
+            <table class="table table-bordered">
+              <thead>
+              <tr>
+                <th class="column-action">Actions</th>
+                <th>Avatar</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let item of metricsTableData">
+                <td class="column-action">
+                  <a (click)="editItem(item)"><i class="ion-edit"></i></a>
+                  <a (click)="deleteItem(item)"><i class="ion-trash-a"></i></a>
+                </td>
+                <td><img [src]="item.avatar" width="50" height="50"></td>
+                <td>{{ item.email }}</td>
+                <td>{{ item.username }}</td>
+                <td>{{ item.first_name }}</td>
+                <td>{{ item.last_name }}</td>
+                <td>{{ item.phone_number }}</td>
+              </tr>
+              <tr *ngIf="isLoading">
+                <td colspan="7" class="text-center">
+                  <div class="loading-indicator"></div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <pagination *ngIf="totalItems>0"
+                      [(ngModel)]="page"
+                      (pageChanged)="pageChanged($event)"
+                      [itemsPerPage]="pageSize"
+                      [totalItems]="totalItems"
+                      [maxSize]="maxSize"
+                      [boundaryLinks]="true"
+                      [rotate]="false"
+                      previousText="&lsaquo;"
+                      nextText="&rsaquo;"
+                      firstText="&laquo;"
+                      lastText="&raquo;"
+                      class="pagination-sm"></pagination>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

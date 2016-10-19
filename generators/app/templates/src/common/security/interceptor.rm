@@ -1,0 +1,17 @@
+export class Interceptor {
+  request() {
+
+  }
+
+  requestError() {
+
+  }
+
+  response() {
+
+  }
+
+  responseError() {
+
+  }
+}

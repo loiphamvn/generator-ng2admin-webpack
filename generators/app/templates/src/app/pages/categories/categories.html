@@ -1,0 +1,57 @@
+<div class="widgets">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="animated fadeIn card  with-scroll table-panel">
+        <div class="card-header clearfix">
+          <h3 class="card-title">Manager Categories</h3>
+        </div>
+        <div class="card-body">
+          <div class="button-wrapper">
+            <button class="btn btn-default" type="button" (click)="addItem()">Add Category</button>
+          </div>
+          <div class="horizontal-scroll">
+            <table class="table table-bordered">
+              <thead>
+              <tr>
+                <th class="column-action">Actions</th>
+                <th>#ID</th>
+                <th>Name</th>
+                <th>Status</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let item of metricsTableData">
+                <td class="column-action">
+                  <a (click)="editItem(item)"><i class="ion-edit"></i></a>
+                  <a (click)="deleteItem(item)"><i class="ion-trash-a"></i></a>
+                </td>
+                <td>{{ item.id }}</td>
+                <td>{{ item.name }}</td>
+                <td>{{ item.status | status }}</td>
+              </tr>
+              <tr *ngIf="isLoading">
+                <td colspan="4" class="text-center">
+                  <div class="loading-indicator"></div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <pagination *ngIf="totalItems>0"
+                      [(ngModel)]="page"
+                      (pageChanged)="pageChanged($event)"
+                      [itemsPerPage]="pageSize"
+                      [totalItems]="totalItems"
+                      [maxSize]="maxSize"
+                      [boundaryLinks]="true"
+                      [rotate]="false"
+                      previousText="&lsaquo;"
+                      nextText="&rsaquo;"
+                      firstText="&laquo;"
+                      lastText="&raquo;"
+                      class="pagination-sm"></pagination>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="auth-main">
+  <div class="auth-block">
+    <h1>Request get new password</h1>
+    <a routerLink="/login" class="auth-link">Already have an admin account? Sign in!</a>
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" class="">
+      <div class="form-group" [ngClass]="{'has-error': (!password.valid && password.touched), 'has-success': (password.valid && password.touched)}">
+        <label for="inputPassword3">Password</label>
+        <input [formControl]="password" type="password" class="form-control" id="inputPassword3" placeholder="Password">
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': (!repeatPassword.valid && repeatPassword.touched), 'has-success': (repeatPassword.valid && repeatPassword.touched)}">
+        <label for="inputPassword4">Password confirmation</label>
+        <input [formControl]="repeatPassword" type="password" class="form-control" id="inputPassword4" placeholder="Password confirmation">
+        <span *ngIf="!passwords.valid && (password.touched || repeatPassword.touched)" class="help-block sub-little-text">Passwords don't match.</span>
+      </div>
+      <div class="form-group">
+        <button [disabled]="!form.valid" type="submit" class="btn btn-default btn-auth">Request get new password</button>
+      </div>
+      <div class="form-group" [collapse]="!success">
+        <div class="alert alert-success">
+          <p>A reset link sent to your email address. <a routerLink="/login">Sign in</a></p>
+        </div>
+      </div>
+      <div class="form-group" [collapse]="!(errors && errors.length>0)">
+        <ul class="alert alert-warning">
+          <li *ngFor="let error of errors">{{error.errorMessage}}</li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</div>

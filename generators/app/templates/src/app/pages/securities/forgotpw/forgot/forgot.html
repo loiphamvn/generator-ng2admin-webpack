@@ -1,0 +1,24 @@
+<div class="auth-main">
+  <div class="auth-block">
+    <h1>Forgot password</h1>
+    <a routerLink="/login" class="auth-link">Already have an admin account? Sign in!</a>
+    <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" class="form-horizontal">
+      <div class="form-group row" [ngClass]="{'has-error': (!email.valid && email.touched), 'has-success': (email.valid && email.touched)}">
+        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+          <input [formControl]="email" type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-offset-2 col-sm-10">
+          <button [disabled]="!form.valid" type="submit" class="btn btn-default btn-auth">Reset Forgot</button>
+        </div>
+      </div>
+      <div class="form-group row" [collapse]="!success">
+        <div class="alert alert-success">
+          <p>A reset link sent to your email address. <a routerLink="/login">Sign in</a></p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

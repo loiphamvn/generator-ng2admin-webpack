@@ -1,0 +1,52 @@
+<div class="widgets">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="animated fadeIn card  with-scroll table-panel">
+        <div class="card-header clearfix">
+          <h3 class="card-title">Edit Country</h3>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" class="form-horizontal">
+            <div class="form-group row" [ngClass]="{'has-error': (!english_name.valid && english_name.touched), 'has-success': (english_name.valid && english_name.touched)}">
+              <label class="col-sm-2 control-label">English Name</label>
+              <div class="col-sm-10">
+                <input [formControl]="english_name" type="text" class="form-control" placeholder="English Name"/>
+              </div>
+            </div>
+            <div class="form-group row" [ngClass]="{'has-error': (!local_name.valid && local_name.touched), 'has-success': (local_name.valid && local_name.touched)}">
+              <label class="col-sm-2 control-label">Local Name</label>
+              <div class="col-sm-10">
+                <input [formControl]="local_name" type="text" class="form-control" placeholder="Local Name"/>
+              </div>
+            </div>
+            <div class="form-group row" [ngClass]="{'has-error': (!region.valid && region.touched), 'has-success': (region.valid && region.touched)}">
+              <label class="col-sm-2 control-label">Region</label>
+              <div class="col-sm-10">
+                <input [formControl]="region" type="text" class="form-control" placeholder="Region"/>
+              </div>
+            </div>
+            <div class="form-group row" [ngClass]="{'has-error': (!alpha2_code.valid && alpha2_code.touched), 'has-success': (alpha2_code.valid && alpha2_code.touched)}">
+              <label class="col-sm-2 control-label">Alpha2 Code</label>
+              <div class="col-sm-10">
+                <input [formControl]="alpha2_code" type="text" class="form-control" placeholder="Alpha2 Code"/>
+              </div>
+            </div>
+            <div class="form-group row" [ngClass]="{'has-error': (!country_calling_code.valid && country_calling_code.touched), 'has-success': (country_calling_code.valid && country_calling_code.touched)}">
+              <label class="col-sm-2 control-label">Country Calling Code</label>
+              <div class="col-sm-10">
+                <input [formControl]="country_calling_code" type="text" class="form-control" placeholder="Country Calling Code"/>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button [disabled]="!form.valid" type="submit" class="btn btn-default">Edit</button>
+                <a (click)="goToUrl('pages/countries')" class="btn btn-default">Cancel</a>
+              </div>
+            </div>
+            <error-notifications [errors]="errors"></error-notifications>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
