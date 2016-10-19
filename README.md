@@ -43,12 +43,4 @@ yo ng2-webpack:service
 
 ## License
 
-MIT © [ivan]()
-
-
-[npm-image]: https://badge.fury.io/js/generator-ng2-webpack.svg
-[npm-url]: https://npmjs.org/package/generator-ng2-webpack
-[travis-image]: https://travis-ci.org/bravealdus/generator-ng2-webpack.svg?branch=master
-[travis-url]: https://travis-ci.org/bravealdus/generator-ng2-webpack
-[daviddm-image]: https://david-dm.org/bravealdus/generator-ng2-webpack.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/bravealdus/generator-ng2-webpack
+MIT © [loi.pham]()
