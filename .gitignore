@@ -1,2 +1,6 @@
+# Editor configuration
+.idea
+
+#Node configuration
 node_modules
 coverage
