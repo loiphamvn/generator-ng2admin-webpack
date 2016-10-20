@@ -1,4 +1,4 @@
-# generator-ng2-webpack
+# generator-ng2admin-webpack
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -7,30 +7,30 @@
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-ng2-webpack using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-ng2admin-webpack using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-ng2-webpack
+npm install -g generator-ng2admin-webpack
 ```
 
 Then generate your new project:
 
 ```bash
-yo ng2-webpack
+yo ng2admin-webpack
 ```
 
 Then generate a component:
 
 ```bash
-yo ng2-webpack:component
+yo ng2admin-webpack:component
 (example name: contact-list)
 ```
 
 Then generate a service:
 
 ```bash
-yo ng2-webpack:service
+yo ng2admin-webpack:service
 (example name: github-connection)
 ```
 
