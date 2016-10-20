@@ -2,10 +2,10 @@
   "_args": [
     [
       {
-        "raw": "generator-ng2-webpack",
+        "raw": "generator-ng2admin-webpack",
         "scope": null,
-        "escapedName": "generator-ng2-webpack",
-        "name": "generator-ng2-webpack",
+        "escapedName": "generator-ng2admin-webpack",
+        "name": "generator-ng2admin-webpack",
         "rawSpec": "",
         "spec": "latest",
         "type": "tag"
@@ -13,15 +13,15 @@
       ""
     ]
   ],
-  "_from": "generator-ng2-webpack@latest",
-  "_id": "generator-ng2-webpack@0.0.1",
+  "_from": "generator-ng2admin-webpack@latest",
+  "_id": "generator-ng2admin-webpack@0.0.1",
   "_inCache": true,
   "_installable": true,
-  "_location": "/generator-ng2-webpack",
+  "_location": "/generator-ng2admin-webpack",
   "_nodeVersion": "6.5.0",
   "_npmOperationalInternal": {
     "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/generator-ng2-webpack-0.0.1.tgz_1464572758059_0.5057129615452141"
+    "tmp": "tmp/generator-ng2admin-webpack-0.0.1.tgz_1464572758059_0.5057129615452141"
   },
   "_npmUser": {
     "name": "bravealdus",
@@ -30,10 +30,10 @@
   "_npmVersion": "3.10.3",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "generator-ng2-webpack",
+    "raw": "generator-ng2admin-webpack",
     "scope": null,
-    "escapedName": "generator-ng2-webpack",
-    "name": "generator-ng2-webpack",
+    "escapedName": "generator-ng2admin-webpack",
+    "name": "generator-ng2admin-webpack",
     "rawSpec": "",
     "spec": "latest",
     "type": "tag"
@@ -41,17 +41,17 @@
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "https://registry.npmjs.org/generator-ng2-webpack/-/generator-ng2-webpack-0.0.1.tgz",
+  "_resolved": "https://registry.npmjs.org/generator-ng2admin-webpack/-/generator-ng2admin-webpack-0.0.1.tgz",
   "_shasum": "3b3b110c64b4f3feda1c26739da5f21aea2382ed",
   "_shrinkwrap": null,
-  "_spec": "generator-ng2-webpack",
+  "_spec": "generator-ng2admin-webpack",
   "_where": "",
   "author": {
     "name": "Ivan Roth",
     "email": "loiphamvn@yahoo.com"
   },
   "bugs": {
-    "url": "https://github.com/bravealdus/generator-ng2-webpack/issues"
+    "url": "https://github.com/bravealdus/generator-ng2admin-webpack/issues"
   },
   "dependencies": {
     "yeoman-generator": "^0.23.0"
@@ -74,7 +74,7 @@
   "directories": {},
   "dist": {
     "shasum": "3b3b110c64b4f3feda1c26739da5f21aea2382ed",
-    "tarball": "https://registry.npmjs.org/generator-ng2-webpack/-/generator-ng2-webpack-0.0.1.tgz"
+    "tarball": "https://registry.npmjs.org/generator-ng2admin-webpack/-/generator-ng2admin-webpack-0.0.1.tgz"
   },
   "eslintConfig": {
     "extends": "xo-space",
@@ -86,7 +86,7 @@
     "generators"
   ],
   "gitHead": "0777e2c09496c0fd1117f09e0fa3705a66035e3f",
-  "homepage": "https://github.com/loiphamvn/generator-ng2-webpack#readme",
+  "homepage": "https://github.com/loiphamvn/generator-ng2admin-webpack#readme",
   "keywords": [
     "yeoman-generator"
   ],
@@ -98,12 +98,12 @@
       "email": "brave.aldus@gmail.com"
     }
   ],
-  "name": "generator-ng2-webpack",
+  "name": "generator-ng2admin-webpack",
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loiphamvn/generator-ng2-webpack.git"
+    "url": "git+https://github.com/loiphamvn/generator-ng2admin-webpack.git"
   },
   "scripts": {
     "prepublish": "gulp prepublish",
