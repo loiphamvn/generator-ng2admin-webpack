@@ -15,12 +15,23 @@ module.exports = yeoman.Base.extend({
     }.bind(this));
   },
 
-  writing: function () {
-    this.fs.copyTpl(
-      this.templatePath('**/*'),
-      this.destinationPath(this.answers.name), {
-        name: this.answers.name
-      }
-    );
+  writing: {
+    core: function () {
+      this.fs.copyTpl(
+        this.templatePath('**/*'),
+        this.destinationPath(this.answers.name), {
+          name: this.answers.name
+        }
+      );
+    },
+
+    configure: function () {
+      this.fs.copyTpl(
+        this.templatePath('.*'),
+        this.destinationPath(this.answers.name), {
+          name: this.answers.name
+        }
+      );
+    }
   }
 });
