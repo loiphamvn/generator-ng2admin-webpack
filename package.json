@@ -47,7 +47,7 @@
   "_spec": "generator-ng2admin-webpack",
   "_where": "",
   "author": {
-    "name": "Ivan Roth",
+    "name": "loi pham",
     "email": "loiphamvn@yahoo.com"
   },
   "bugs": {
@@ -109,5 +109,5 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "version": "0.0.1"
+  "version": "0.0.2.1"
 }
