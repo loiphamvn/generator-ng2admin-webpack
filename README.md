@@ -1,7 +1,7 @@
 # generator-ng2admin-webpack
 
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status](https://travis-ci.org/loiphamvn/generator-ng2admin-webpack.svg?branch=master)](https://travis-ci.org/loiphamvn/generator-ng2admin-webpack)
 [![Dependency Status][daviddm-image]][daviddm-url]
 > Basic structure for web apps with typescript, angular2 and webpack
 
