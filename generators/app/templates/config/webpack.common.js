@@ -252,13 +252,13 @@ module.exports = function (options) {
       }),
 
 
-      /**
-       * Plugin: ContextReplacementPlugin
-       * Description: Provides context to Angular's use of System.import
-       *
-       * See: https://webpack.github.io/docs/list-of-plugins.html#contextreplacementplugin
-       * See: https://github.com/angular/angular/issues/11580
-       */
+    /**
+     * Plugin: ContextReplacementPlugin
+     * Description: Provides context to Angular's use of System.import
+     *
+     * See: https://webpack.github.io/docs/list-of-plugins.html#contextreplacementplugin
+     * See: https://github.com/angular/angular/issues/11580
+     */
       new ContextReplacementPlugin(
         // The (\\|\/) piece accounts for path separators in *nix and Windows
         /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
