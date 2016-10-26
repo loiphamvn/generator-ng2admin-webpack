@@ -1,0 +1,123 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.10.9
+3 info using node@v6.5.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\loiptx\\AppData\\Roaming\\nvm\\v6.5.0\\node_modules\\generator-ng2admin-webpack',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\loiptx\AppData\Roaming\npm-cache\generator-ng2admin-webpack\0.0.5\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\loiptx\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle generator-ng2admin-webpack@0.0.5~prepublish: generator-ng2admin-webpack@0.0.5
+11 verbose lifecycle generator-ng2admin-webpack@0.0.5~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle generator-ng2admin-webpack@0.0.5~prepublish: PATH: C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\npm\bin\node-gyp-bin;C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\generator-ng2admin-webpack\node_modules\.bin;C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\.bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Users\loiptx\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\bin\Git\cmd;d:\Program Files (x86)\Bitvise SSH Client;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\bin\Git\usr\bin
+13 verbose lifecycle generator-ng2admin-webpack@0.0.5~prepublish: CWD: C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\generator-ng2admin-webpack
+14 silly lifecycle generator-ng2admin-webpack@0.0.5~prepublish: Args: [ '/d /s /c', 'gulp prepublish' ]
+15 silly lifecycle generator-ng2admin-webpack@0.0.5~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ 'C:\\Users\\loiptx\\AppData\\Roaming\\npm-cache\\generator-ng2admin-webpack\\0.0.5\\package.tgz',
+16 verbose tar pack   'C:\\Users\\loiptx\\AppData\\Roaming\\nvm\\v6.5.0\\node_modules\\generator-ng2admin-webpack' ]
+17 verbose tarball C:\Users\loiptx\AppData\Roaming\npm-cache\generator-ng2admin-webpack\0.0.5\package.tgz
+18 verbose folder C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\generator-ng2admin-webpack
+19 verbose addLocalTarball adding from inside cache C:\Users\loiptx\AppData\Roaming\npm-cache\generator-ng2admin-webpack\0.0.5\package.tgz
+20 verbose correctMkdir C:\Users\loiptx\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+21 silly cache afterAdd generator-ng2admin-webpack@0.0.5
+22 verbose afterAdd C:\Users\loiptx\AppData\Roaming\npm-cache\generator-ng2admin-webpack\0.0.5\package\package.json not in flight; writing
+23 verbose correctMkdir C:\Users\loiptx\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+24 verbose afterAdd C:\Users\loiptx\AppData\Roaming\npm-cache\generator-ng2admin-webpack\0.0.5\package\package.json written
+25 silly publish { _args: [ [ [Object], '' ] ],
+25 silly publish   _from: '.',
+25 silly publish   _id: 'generator-ng2admin-webpack@0.0.5',
+25 silly publish   _inCache: true,
+25 silly publish   _installable: true,
+25 silly publish   _location: '/generator-ng2admin-webpack',
+25 silly publish   _nodeVersion: '6.5.0',
+25 silly publish   _npmOperationalInternal:
+25 silly publish    { host: 'packages-16-east.internal.npmjs.com',
+25 silly publish      tmp: 'tmp/generator-ng2admin-webpack-0.0.4.tgz_1464572758059_0.5057129615452141' },
+25 silly publish   _npmUser: { name: 'bravealdus', email: 'brave.aldus@gmail.com' },
+25 silly publish   _npmVersion: '3.10.3',
+25 silly publish   _phantomChildren: {},
+25 silly publish   _requested:
+25 silly publish    { raw: 'generator-ng2admin-webpack',
+25 silly publish      scope: null,
+25 silly publish      escapedName: 'generator-ng2admin-webpack',
+25 silly publish      name: 'generator-ng2admin-webpack',
+25 silly publish      rawSpec: '',
+25 silly publish      spec: 'latest',
+25 silly publish      type: 'tag' },
+25 silly publish   _requiredBy: [ '#USER' ],
+25 silly publish   _resolved: 'https://registry.npmjs.org/generator-ng2admin-webpack/-/generator-ng2admin-webpack-0.0.1.tgz',
+25 silly publish   _shasum: 'e96eba877224713d92363123a0c35208f31a21d3',
+25 silly publish   _shrinkwrap: null,
+25 silly publish   _spec: 'generator-ng2admin-webpack',
+25 silly publish   _where: '',
+25 silly publish   author: { name: 'loi pham', email: 'loiphamvn@yahoo.com' },
+25 silly publish   bugs: { url: 'https://github.com/bravealdus/generator-ng2admin-webpack/issues' },
+25 silly publish   dependencies: { 'yeoman-generator': '^0.23.0' },
+25 silly publish   description: 'Front-end projects with typescript, angular2 and webpack',
+25 silly publish   devDependencies:
+25 silly publish    { eslint: '^2.1.0',
+25 silly publish      'eslint-config-xo-space': '^0.13.0',
+25 silly publish      gulp: '^3.9.0',
+25 silly publish      'gulp-eslint': '^2.0.0',
+25 silly publish      'gulp-exclude-gitignore': '^1.0.0',
+25 silly publish      'gulp-istanbul': '^0.10.3',
+25 silly publish      'gulp-line-ending-corrector': '^1.0.1',
+25 silly publish      'gulp-mocha': '^2.0.0',
+25 silly publish      'gulp-nsp': '^2.1.0',
+25 silly publish      'gulp-plumber': '^1.0.0',
+25 silly publish      'yeoman-assert': '^2.0.0',
+25 silly publish      'yeoman-test': '^1.0.0' },
+25 silly publish   directories: {},
+25 silly publish   dist:
+25 silly publish    { shasum: '3b3b110c64b4f3feda1c26739da5f21aea2382ed',
+25 silly publish      tarball: 'https://registry.npmjs.org/generator-ng2admin-webpack/-/generator-ng2admin-webpack-0.0.4.tgz' },
+25 silly publish   eslintConfig: { extends: 'xo-space', env: { mocha: true } },
+25 silly publish   files: [ 'generators' ],
+25 silly publish   gitHead: '0777e2c09496c0fd1117f09e0fa3705a66035e3f',
+25 silly publish   homepage: 'https://github.com/loiphamvn/generator-ng2admin-webpack#readme',
+25 silly publish   keywords: [ 'yeoman-generator' ],
+25 silly publish   license: 'MIT',
+25 silly publish   main: 'generators/index.js',
+25 silly publish   maintainers: [ { name: 'bravealdus', email: 'brave.aldus@gmail.com' } ],
+25 silly publish   name: 'generator-ng2admin-webpack',
+25 silly publish   optionalDependencies: {},
+25 silly publish   readme: 'ERROR: No README data found!',
+25 silly publish   repository:
+25 silly publish    { type: 'git',
+25 silly publish      url: 'git+https://github.com/loiphamvn/generator-ng2admin-webpack.git' },
+25 silly publish   scripts: { prepublish: 'gulp prepublish', test: 'gulp' },
+25 silly publish   private: true,
+25 silly publish   version: '0.0.5' }
+26 verbose getPublishConfig undefined
+27 verbose stack Error: This package has been marked as private
+27 verbose stack Remove the 'private' field from the package.json to publish it.
+27 verbose stack     at publish_ (C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\npm\lib\publish.js:101:15)
+27 verbose stack     at Array.<anonymous> (C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+27 verbose stack     at LOOP (C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+27 verbose stack     at LOOP (C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\npm\node_modules\slide\lib\chain.js:14:28)
+27 verbose stack     at chain (C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+27 verbose stack     at C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\npm\lib\publish.js:73:5
+27 verbose stack     at RES (C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+27 verbose stack     at f (C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\npm\node_modules\once\once.js:25:25)
+27 verbose stack     at C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\npm\lib\cache.js:363:16
+27 verbose stack     at C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\npm\node_modules\write-file-atomic\index.js:50:11
+28 verbose cwd C:\Users\loiptx\AppData\Roaming\nvm\v6.5.0\node_modules\generator-ng2admin-webpack
+29 error Windows_NT 6.1.7601
+30 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+31 error node v6.5.0
+32 error npm  v3.10.9
+33 error This package has been marked as private
+33 error Remove the 'private' field from the package.json to publish it.
+34 error If you need help, you may report this error at:
+34 error     <https://github.com/npm/npm/issues>
+35 verbose exit [ 1, true ]

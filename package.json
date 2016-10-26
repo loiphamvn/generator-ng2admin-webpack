@@ -14,7 +14,7 @@
     ]
   ],
   "_from": "generator-ng2admin-webpack@latest",
-  "_id": "generator-ng2admin-webpack@0.0.1",
+  "_id": "generator-ng2admin-webpack@0.0.5",
   "_inCache": true,
   "_installable": true,
   "_location": "/generator-ng2admin-webpack",
@@ -109,6 +109,5 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "private": true,
-  "version": "0.0.4"
+  "version": "0.0.5"
 }
