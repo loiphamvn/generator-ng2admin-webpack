@@ -21,7 +21,7 @@
   "_nodeVersion": "6.5.0",
   "_npmOperationalInternal": {
     "host": "packages-16-east.internal.npmjs.com",
-    "tmp": "tmp/generator-ng2admin-webpack-0.0.1.tgz_1464572758059_0.5057129615452141"
+    "tmp": "tmp/generator-ng2admin-webpack-0.0.4.tgz_1464572758059_0.5057129615452141"
   },
   "_npmUser": {
     "name": "bravealdus",
@@ -74,7 +74,7 @@
   "directories": {},
   "dist": {
     "shasum": "3b3b110c64b4f3feda1c26739da5f21aea2382ed",
-    "tarball": "https://registry.npmjs.org/generator-ng2admin-webpack/-/generator-ng2admin-webpack-0.0.1.tgz"
+    "tarball": "https://registry.npmjs.org/generator-ng2admin-webpack/-/generator-ng2admin-webpack-0.0.4.tgz"
   },
   "eslintConfig": {
     "extends": "xo-space",
@@ -109,5 +109,6 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "version": "0.0.3"
+  "private": true,
+  "version": "0.0.4"
 }
