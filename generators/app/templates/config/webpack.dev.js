@@ -29,7 +29,7 @@ const METADATA = webpackMerge(commonConfig({env: ENV}).metadata, {
  *
  * See: http://webpack.github.io/docs/configuration.html#cli
  */
-module.exports = function(options) {
+module.exports = function (options) {
   return webpackMerge(commonConfig({env: ENV}), {
 
     /**
@@ -97,15 +97,15 @@ module.exports = function(options) {
 
     plugins: [
 
-      /**
-       * Plugin: DefinePlugin
-       * Description: Define free variables.
-       * Useful for having development builds with debug logging or adding global constants.
-       *
-       * Environment helpers
-       *
-       * See: https://webpack.github.io/docs/list-of-plugins.html#defineplugin
-       */
+    /**
+     * Plugin: DefinePlugin
+     * Description: Define free variables.
+     * Useful for having development builds with debug logging or adding global constants.
+     *
+     * Environment helpers
+     *
+     * See: https://webpack.github.io/docs/list-of-plugins.html#defineplugin
+     */
       // NOTE: when adding more properties, make sure you include them in custom-typings.d.ts
       new DefinePlugin({
         'ENV': JSON.stringify(METADATA.ENV),
@@ -114,17 +114,17 @@ module.exports = function(options) {
           'ENV': JSON.stringify(METADATA.ENV),
           'NODE_ENV': JSON.stringify(METADATA.ENV),
           'HMR': METADATA.HMR,
-          'API_URL' : JSON.stringify(METADATA.API_URL),
+          'API_URL': JSON.stringify(METADATA.API_URL)
         }
       }),
 
-      /**
-       * Plugin: NamedModulesPlugin (experimental)
-       * Description: Uses file names as module name.
-       *
-       * See: https://github.com/webpack/webpack/commit/a04ffb928365b19feb75087c63f13cadfc08e1eb
-       */
-      new NamedModulesPlugin(),
+    /**
+     * Plugin: NamedModulesPlugin (experimental)
+     * Description: Uses file names as module name.
+     *
+     * See: https://github.com/webpack/webpack/commit/a04ffb928365b19feb75087c63f13cadfc08e1eb
+     */
+      new NamedModulesPlugin()
 
     ],
 
